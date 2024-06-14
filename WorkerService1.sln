@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerService1", "WorkerService1\WorkerService1.csproj", "{413187B3-D326-417E-A6CA-AC485C1D750F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{413187B3-D326-417E-A6CA-AC485C1D750F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413187B3-D326-417E-A6CA-AC485C1D750F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413187B3-D326-417E-A6CA-AC485C1D750F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413187B3-D326-417E-A6CA-AC485C1D750F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
