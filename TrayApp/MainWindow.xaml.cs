@@ -1,59 +1,47 @@
 ﻿using System;
-using System.Windows;
-using System.Windows.Forms;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
+using System.IO;
+using System.Net;
+using System.Windows;
+using Hardcodet.Wpf.TaskbarNotification;
 
 namespace TrayApp
 {
     public partial class MainWindow : Window
     {
-        private NotifyIcon trayIcon;
-        private ContextMenuStrip trayMenu;
+        private TaskbarIcon _notifyIcon;
 
         public MainWindow()
         {
             InitializeComponent();
-            CreateTrayIcon();
+
+            var appLocation = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            var iconPath = Path.Combine(Path.GetDirectoryName(appLocation), "icon.ico");
+
+            _notifyIcon = new TaskbarIcon
+            {
+                Icon = new Icon(iconPath),
+                Visibility = Visibility.Visible
+            };
+
+            _notifyIcon.TrayMouseDoubleClick += (sender, args) => Show();
         }
 
-        private void CreateTrayIcon()
+        protected override void OnStateChanged(EventArgs e)
         {
-            // 創建右鍵選單
-            trayMenu = new ContextMenuStrip();
-            trayMenu.Items.Add("Show", null, OnShow);
-            trayMenu.Items.Add("Exit", null, OnExit);
+            if (WindowState == WindowState.Minimized)
+            {
+                Hide();
+            }
 
-            // 創建托盤圖示
-            trayIcon = new NotifyIcon();
-            trayIcon.Text = "TrayApp";
-            trayIcon.Icon = new Icon("icon.ico");
-
-            // 增加右鍵選單到托盤圖示
-            trayIcon.ContextMenuStrip = trayMenu;
-            trayIcon.Visible = true;
-
-            // 隱藏主窗口
-            this.WindowState = WindowState.Minimized;
-            this.ShowInTaskbar = false;
-            this.Visibility = Visibility.Hidden;
-        }
-
-        private void OnShow(object sender, EventArgs e)
-        {
-            this.Show();
-            this.WindowState = WindowState.Normal;
-            this.ShowInTaskbar = true;
-            this.Visibility = Visibility.Visible;
-        }
-
-        private void OnExit(object sender, EventArgs e)
-        {
-            System.Windows.Application.Current.Shutdown();
+            base.OnStateChanged(e);
         }
 
         protected override void OnClosed(EventArgs e)
         {
-            trayIcon.Dispose();
+            _notifyIcon.Dispose();
+
             base.OnClosed(e);
         }
     }
