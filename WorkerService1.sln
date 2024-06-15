@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerService1", "WorkerService1\WorkerService1.csproj", "{413187B3-D326-417E-A6CA-AC485C1D750F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrayApp", "TrayApp\TrayApp.csproj", "{1CA7C3D8-19EF-4E6D-B576-6EB99C876D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewProcess", "NewProcess\NewProcess.csproj", "{1F327A1F-5A0C-452D-A5AE-F462268A7EB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{413187B3-D326-417E-A6CA-AC485C1D750F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{413187B3-D326-417E-A6CA-AC485C1D750F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{413187B3-D326-417E-A6CA-AC485C1D750F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CA7C3D8-19EF-4E6D-B576-6EB99C876D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA7C3D8-19EF-4E6D-B576-6EB99C876D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA7C3D8-19EF-4E6D-B576-6EB99C876D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA7C3D8-19EF-4E6D-B576-6EB99C876D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F327A1F-5A0C-452D-A5AE-F462268A7EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F327A1F-5A0C-452D-A5AE-F462268A7EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F327A1F-5A0C-452D-A5AE-F462268A7EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F327A1F-5A0C-452D-A5AE-F462268A7EB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

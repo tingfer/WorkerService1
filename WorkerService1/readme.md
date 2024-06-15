@@ -9,3 +9,8 @@ sc delete MyWorkerService
 net stop MyWorkerService
 
 打開“服務”管理器 (services.msc)，找到 MyWorkerService，右鍵單擊並選擇“停止”。
+
+
+
+系統托盤圖示（System Tray Icon）
+--------------------------------
