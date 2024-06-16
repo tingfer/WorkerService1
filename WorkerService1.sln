@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewProcess", "NewProcess\Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrayApp", "TrayApp\TrayApp.csproj", "{E054DB9D-2B16-411F-8D7F-FFA2ADD16D56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiLog", "MultiLog\MultiLog.csproj", "{FFEF40CA-57BC-4DDB-87EA-502D6BB0A88C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{E054DB9D-2B16-411F-8D7F-FFA2ADD16D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E054DB9D-2B16-411F-8D7F-FFA2ADD16D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E054DB9D-2B16-411F-8D7F-FFA2ADD16D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFEF40CA-57BC-4DDB-87EA-502D6BB0A88C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFEF40CA-57BC-4DDB-87EA-502D6BB0A88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFEF40CA-57BC-4DDB-87EA-502D6BB0A88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFEF40CA-57BC-4DDB-87EA-502D6BB0A88C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
