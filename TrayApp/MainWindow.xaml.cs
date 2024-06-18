@@ -26,6 +26,7 @@ namespace TrayApp
             };
 
             _notifyIcon.TrayMouseDoubleClick += (sender, args) => Show();
+            _notifyIcon.TrayMouseMove += (sender, args) => _notifyIcon.ToolTipText = "dsa worker";
         }
 
         protected override void OnStateChanged(EventArgs e)
